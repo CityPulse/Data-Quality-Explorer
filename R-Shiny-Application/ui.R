@@ -109,6 +109,7 @@ shinyUI(navbarPage("CityPulse QoI Explorer", id="nav",
            selectInput("colorscale", "Color Scale", colorconfig, selected = 'fullscale'), 
            selectInput("colorchooser", "Color Choice", colorchoice, selected = 'Red-Yellow-Green'),          
            selectInput("offlineMode", "Offline mode", c(FALSE, TRUE), selected = offline),
+           selectInput("performanceOfflineMode", "Performance offline mode", c(FALSE, TRUE), selected = performance_offline),
            selectInput("sourceselect", "Data Source", sourceconfig) 
   ),
   

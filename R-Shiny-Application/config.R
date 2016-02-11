@@ -2,7 +2,7 @@
 #local
 server="localhost"
 port=9090
-performance_offline=TRUE
+performance_offline=FALSE
 
 dbhost='localhost'
 dbname='cp_traffic'
