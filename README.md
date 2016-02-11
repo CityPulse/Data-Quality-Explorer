@@ -1,6 +1,7 @@
 # QualityExplorer
 Web-based tool to monitor information about sensor quality and framework reliability
 
+![Screenshot](https://github.com/CityPulse/QualityExplorer/blob/master/ScreenshotQoiExplorer-CityPulse.png)
 
 The following applications/libraries have to be installed (Name/Licene/Link):
 R (Version>=3.1)
