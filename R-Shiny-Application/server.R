@@ -310,6 +310,7 @@ shinyServer(function(input, output, session) {
   
   observe({
     offline <<- as.logical(offlineMode())
+    performance_offline <<- offline
     tryCatch({
       updateSelectInput(session, inputId = "category", choices = getServiceCategories())
     },

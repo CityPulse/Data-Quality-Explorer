@@ -12,7 +12,7 @@ getPiePlots <- function(uuid=NULL, category=NULL){
     # category="Romanian_Weather"
     # print(category)
     select = category
-    if (offline == TRUE){
+    if (performance_offline == TRUE){
       filename = paste('./data/categories.json', sep='')
     }else{
       api='/stat_api/avg_processing_time?category='
@@ -22,7 +22,7 @@ getPiePlots <- function(uuid=NULL, category=NULL){
     # uuid="51f0f28c-0909-5a83-a310-b6bd686bf57b"
     # print(uuid)
     select = uuid
-    if (offline == TRUE){
+    if (performance_offline == TRUE){
       filename = paste('./data/uuids.json', sep='')
     }else{
       api='/stat_api/avg_processing_time?uuid='

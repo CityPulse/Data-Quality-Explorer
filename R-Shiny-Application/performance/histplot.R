@@ -17,7 +17,7 @@ getHist <- function(category=NULL){
   uuids = getWrapperUUIDsForCategory(category)
   uuidString = paste(uuids, collapse=",")
   
-  if (offline == TRUE){
+  if (performance_offline == TRUE){
     filename = paste('./data/uuids.json', sep='')
   }else{
     api='/stat_api/avg_processing_time?uuid='
@@ -67,7 +67,7 @@ getHist <- function(category=NULL){
   
   rownames(histData) <- NULL
   for(name in names(histData)){
-    g = ggplot(histData, aes_string(x =name)) + geom_histogram(binwidth=0.1) + labs(title=name) + labs(x=name, y="Count")
+    g = ggplot(histData, aes_string(x =name)) + geom_histogram(binwidth=0.1) + labs(title=name) + labs(x=paste(name, " duration (ms)"), y="Count")
     plotList[[name]] = g
   }
   # print("h2")

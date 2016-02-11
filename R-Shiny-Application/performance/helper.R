@@ -1,5 +1,5 @@
 getWrapperUUIDs <- function(){
-  if (offline == TRUE){
+  if (performance_offline == TRUE){
     filename = paste('./data/listwrapper.json', sep='')
   }else{
     api='/api/listwrapper'
@@ -16,7 +16,7 @@ getWrapperUUIDs <- function(){
 
 getWrapperUUIDsForCategory <- function(category){
   # print(paste("cat:", category))
-  if (offline == TRUE){
+  if (performance_offline == TRUE){
     filename = paste('./data/listwrapper.json', sep='')
   }else{
     api='/api/listwrapper'
@@ -34,7 +34,7 @@ getWrapperUUIDsForCategory <- function(category){
 
 getWrapperInformation <- function(uuid){
   if(!is.null(uuid) && uuid !=""){
-    if (offline == TRUE){
+    if (performance_offline == TRUE){
       filename = paste('./data/descriptions/', uuid, '.json', sep='')
     }else{
       api='/api/get_description?uuid='
@@ -51,7 +51,7 @@ getWrapperInformation <- function(uuid){
 }
 
 getServiceCategories <- function(){
-  if (offline == TRUE){
+  if (performance_offline == TRUE){
     filename = paste('./data/listwrapper.json', sep='')
   }else{
     api='/api/listwrapper'
@@ -63,12 +63,13 @@ getServiceCategories <- function(){
   }
   wrappers = jsonWrappers$wrappers
   categories = unique(lapply(wrappers, function(x) x$sensorType))
-  return(categories)
+  sort_cat = sort(unlist(categories))
+  return(sort_cat)
 }
 
 
 getNames <- function(category=NULL){
-  if (offline == TRUE){
+  if (performance_offline == TRUE){
     filename = paste('./data/categories.json', sep='')
   }else{
     api='/stat_api/avg_processing_time?category='
