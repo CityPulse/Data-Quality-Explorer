@@ -48,5 +48,9 @@ To start the component change into the 'R-Shiny-Application' folder and execute 
 
 This starts the server listening on localhost (127.0.0.1) at port 10111. Change the 'host' and 'port' parameter in the start command according to your needs.
 
+## Contributers
+The GDI component was developed as part of the EU project CityPulse. The consortium member University of Applied Sciences provided the main contributions for this component.
+
+
 ## Link
 The code of the Resource Management can be found here: https://github.com/CityPulse/QualityExplorer.git
