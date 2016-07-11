@@ -51,6 +51,8 @@ This starts the server listening on localhost (127.0.0.1) at port 10111. Change 
 ## Contributers
 The GDI component was developed as part of the EU project CityPulse. The consortium member University of Applied Sciences provided the main contributions for this component.
 
+## Demonstration Video
+An introduction video for the QoI Explorer can be found here: https://www.youtube.com/watch?v=edFrlciO8Og
 
 ## Link
 The code of the Resource Management can be found here: https://github.com/CityPulse/QualityExplorer.git
