@@ -19,8 +19,7 @@ R (Version>=3.1)
 	<tr><td>rgdal</td><td>GPL-3</td><td>https://cran.r-project.org/web/packages/rgdal/</td></tr>
 	<tr><td>cleangeo</td><td>GPL-3</td><td>https://cran.r-project.org/web/packages/cleangeo/</td></tr>
 	<tr><td>rjson</td><td>GPL-2</td><td>https://cran.r-project.org/web/packages/rjson/</td></tr>
-	<tr><td>ggplot2</td><td></td><td></td></tr>
-	<tr><td></td><td>GPL-2</td><td>https://cran.r-project.org/web/packages/ggplot2/</td></tr>
+	<tr><td>ggplot2</td><td>GPL-2</td><td>https://cran.r-project.org/web/packages/ggplot2/</td></tr>
 	<tr><td>lattice</td><td>GPL-3</td><td>https://cran.r-project.org/web/packages/lattice/</td></tr>
 	<tr><td>scales</td><td>MIT</td><td>https://cran.r-project.org/web/packages/scales/</td></tr>
 	<tr><td>RColorBrewer</td><td>Apache 2.0</td><td>https://cran.r-project.org/web/packages/RColorBrewer/</td></tr>
